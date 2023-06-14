@@ -9,22 +9,27 @@ class Counter extends Component {
     }
 
    handlePlus = () => {
+    if(this.state.counter < 5 ){
         this.setState({
-             counter : this.state.counter + 1 
-            })
+            counter : this.state.counter + 1 
+       })
+    }
+       
    }
     
    handleMinus = () => {
+    if(this.state.counter > 0){
         this.setState({
             counter : this.state.counter - 1
         })
+    }
    }
     render() {
         return (
             <div>
                 <p> Counter : {this.state.counter}</p>
-                <button onClick={this.handlePlus}> + </button>
-                <button onClick={this.handleMinus}> - </button>
+                <button disabled={this.state.counter < 5 ? false : true} onClick={this.handlePlus}> + </button>
+                <button disabled={this.state.counter === 0 ? true : false} onClick={this.handleMinus}> - </button>
             </div>
         );
     }

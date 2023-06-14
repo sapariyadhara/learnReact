@@ -4,18 +4,24 @@ function CounterFun(props) {
     let [counter , setCounter] = useState(0)
 
     const handlePlus = () => {
-        setCounter(counter+1)
+        if(counter < 5){
+            setCounter(counter+1)
+        }
+        
     }
 
     const handleMinus = () => {
-        setCounter(counter-1)
+        if(counter > 0){
+            setCounter(counter-1)
+        }
+        // setCounter(counter-1)
     }
 
     return (
         <div>
-            <p>Counter : {counter}</p>
-            <button onClick={handlePlus}> + </button>
-            <button onClick={handleMinus}> - </button>
+            <p>Counter1 : {counter}</p>
+            <button disabled={counter < 5 ? false : true} onClick={handlePlus}> + </button>
+            <button disabled={counter === 0 ? true : false } onClick={handleMinus}> - </button>
         </div>
     );
 }
