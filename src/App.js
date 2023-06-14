@@ -1,4 +1,6 @@
 
+import Counter from './containers/Counter';
+import CounterFun from './containers/CounterFun';
 import Coursee from './containers/Coursee';
 import Employee from './containers/Employee';
 import EmployeeFun from './containers/EmployeeFun';
@@ -11,7 +13,9 @@ function App() {
     <>
      {/* <Employee /> */}
      {/* <Coursee /> */}
-     <EmployeeFun />
+     {/* <EmployeeFun /> */}
+     <Counter />
+     <CounterFun />
     </>
   );
 }
