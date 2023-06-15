@@ -1,4 +1,6 @@
 
+import Clock from './containers/Clock';
+import ClockFun from './containers/ClockFun';
 import Counter from './containers/Counter';
 import CounterFun from './containers/CounterFun';
 import Country from './containers/Country';
@@ -18,8 +20,10 @@ function App() {
      {/* <EmployeeFun /> */}
      {/* <Counter /> */}
      {/* <CounterFun /> */}
-     <Country />
-     <Country1 />
+     {/* <Country /> */}
+     {/* <Country1 /> */}
+     {/* <Clock /> */}
+     <ClockFun />
     </>
   );
 }
