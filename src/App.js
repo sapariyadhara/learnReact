@@ -8,8 +8,10 @@ import Country1 from './containers/Country1';
 import Coursee from './containers/Coursee';
 import Employee from './containers/Employee';
 import EmployeeFun from './containers/EmployeeFun';
+import Products from './containers/Products';
 import Students from './containers/Students';
 import StudentsFun from './containers/StudentsFun';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -23,7 +25,8 @@ function App() {
      {/* <Country /> */}
      {/* <Country1 /> */}
      {/* <Clock /> */}
-     <ClockFun />
+     {/* <ClockFun /> */}
+     <Products />
     </>
   );
 }
