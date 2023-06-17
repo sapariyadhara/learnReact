@@ -1,4 +1,4 @@
-import { hover } from "@testing-library/user-event/dist/hover";
+// import { hover } from "@testing-library/user-event/dist/hover";
 import React, { Component } from "react";
 import {
     Button,
@@ -223,48 +223,64 @@ class Products extends Component {
         // let mbtn = document.getElementsByClassName("mbtn").value
         // console.log(mbtn);
        
-        let mData = this.state.myData.filter((v , i) => v.category === 'Mobile'
-              
-        )
+        let mData = this.state.myData.filter((v , i) => v.category === 'Mobile')
+        this.setState({
+          myData : mData
+      })
 
-        if(mData){
-            console.log(mData , "dfbh");
-            this.setState({
-                myData
-            })
+        // if(mData){
+        //     console.log(mData , "dfbh");
+        //     this.setState({
+        //         myData : mData
+        //     })
             
-        }
+        // }else {
+        //   this.setState({
+        //     myData 
+        // }) 
+        // }
         console.log(mData);
 
     }
     handlePc = () => {
         console.log("pc");
-        let pData = this.state.myData.filter((v , i) => v.category === 'Pc'
-              
-        )
+        let pData = this.state.myData.filter((v , i) => v.category === 'Pc')
 
-        if(pData){
-            console.log(pData , "dfbh");
-            pData.map((v) => {
+        this.setState({
+          myData : pData
+      })
 
-                }) 
+        // if(pData){
+        //     console.log(pData , "dfbh");
+        //     this.setState({
+        //       myData : pData
+        //   })
           
-        }
+        // }else {
+        //   this.setState({
+        //     myData 
+        // }) 
+        // }
         console.log(pData);
     }
     handleLaptop = () => {
         console.log("leptop");
-        let lData = this.state.myData.filter((v , i) => v.category === 'Laptop'
-              
-        )
+        let lData = this.state.myData.filter((v , i) => v.category === 'Laptop')
+        this.setState({
+          myData : lData
+      }) 
 
-        if(lData){
-            console.log(lData , "dfbh");
-            lData.map((v) => {
-
-                }) 
+        // if(lData){
+        //     console.log(lData , "dfbh");
+        //     this.setState({
+        //       myData : lData
+        //   }) 
           
-        }
+        // } else {
+        //   this.setState({
+        //     myData 
+        // }) 
+        // }
         console.log(lData);
     }
     
@@ -274,7 +290,7 @@ class Products extends Component {
       <div>
        
        <Container>
-       <Button  outline active  className="mbtn" onClick={this.handleMobile}>Mobile</Button> {' '}
+       <Button  onClick={this.handleMobile}>Mobile</Button> {' '}
        <Button  onClick={this.handlePc}>Pc</Button>{' '}
        <Button onClick={this.handleLaptop}>Laptop</Button>{' '}
        <Row>
