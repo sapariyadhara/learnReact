@@ -219,10 +219,6 @@ class Products extends Component {
 
 
     handleMobile = () => {
-        console.log("mobile");
-        // let mbtn = document.getElementsByClassName("mbtn").value
-        // console.log(mbtn);
-       
         let mData = this.state.myData.filter((v , i) => v.category === 'Mobile')
         this.setState({
           myData : mData
@@ -290,7 +286,8 @@ class Products extends Component {
       <div>
        
        <Container>
-       <Button  onClick={this.handleMobile}>Mobile</Button> {' '}
+       <Button 
+        onClick={this.handleMobile}>Mobile</Button> {' '}
        <Button  onClick={this.handlePc}>Pc</Button>{' '}
        <Button onClick={this.handleLaptop}>Laptop</Button>{' '}
        <Row>
@@ -344,11 +341,3 @@ class Products extends Component {
 
 export default Products;
 
-
-
-
-// let fData = getCinemaData.filter((v) =>
-// v.name.toLowerCase().includes(input.toLowerCase()) ||
-// v.location.toLowerCase().includes(input.toLowerCase()) ||
-// v.facility.toLowerCase().includes(input.toLowerCase())
-// )
