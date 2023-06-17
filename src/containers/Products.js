@@ -211,7 +211,7 @@ class Products extends Component {
       <div>
        <Container>
        <Row>
-        {myData.map((v) => {
+        {myData.map((v , i) => {      
           return (
            
              
@@ -239,7 +239,7 @@ class Products extends Component {
                       width="100%"
                     />
                     <CardBody>
-                      <CardText>Price : {v.price}</CardText>
+                      <CardText>Price : {v.price} </CardText>
                      <Button>Click</Button>
                     </CardBody>
                   </Card>
@@ -250,39 +250,6 @@ class Products extends Component {
         })}
         </Row>
         </Container>
-        {/* <Card
-                    style={{
-                        width: '18rem'
-                    }}
-                >
-                    <CardBody>
-                        <CardTitle tag="h5">
-                            <p> Name : {this.state.name} </p>
-                        </CardTitle>
-                        <CardSubtitle
-                            className="mb-2 text-muted"
-                            tag="h6"
-                        >
-                            <p> Description : {this.state.description} </p>
-                        </CardSubtitle>
-                    </CardBody>
-                    <img
-                        alt="Card cap"
-                        src="https://loremflickr.com/320/240"
-                        width="100%"
-                    />
-                    <CardBody>
-                        <CardText>
-                            Some quick example text to build on the card title and make up the bulk of the card‘s content.
-                        </CardText>
-                        <CardLink href="#">
-                            Card Link
-                        </CardLink>
-                        <CardLink href="#">
-                            Another Link
-                        </CardLink>
-                    </CardBody>
-                </Card> */}
       </div>
     );
   }
