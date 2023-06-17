@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React, { Component } from "react";
 import {
     Button,
@@ -9,6 +10,7 @@ import {
   CardTitle,
   Col,
   Container,
+  Input,
   Row,
 } from "reactstrap";
 
@@ -23,7 +25,7 @@ const myData = [
     keywords:
       "Android Small Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, small sticker sheet, android small sticker sheets, Android Sheet",
     url: "https://loremflickr.com/320/240  ",
-    category: "accessories",
+    category: "Mobile",
     subcategory: "accessories",
   },
   {
@@ -35,7 +37,7 @@ const myData = [
     keywords:
       "Android Large Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, large sticker sheet, android large sticker sheets, Android Sheet",
     url: "https://loremflickr.com/320/240&quot",
-    category: "accessories",
+    category: "Pc",
     subcategory: "accessories",
   },
   {
@@ -49,7 +51,7 @@ const myData = [
     keywords:
       "Google Bot, google bot, bots, natural bots, wood bot, google wood bot",
     url: "https://loremflickr.com/320/240&quot",
-    category: "accessories",
+    category: "Laptop",
     subcategory: "accessories",
   },
   {
@@ -63,7 +65,7 @@ const myData = [
     keywords:
       "Google Emoji Sticker Pack, Google sticker pack, emoji sticker pack, google emoji, stickers, pack of sticker, pack of emoji stickers",
     url: " https://loremflickr.com/320/240&quot",
-    category: "accessories",
+    category: "Pc",
     subcategory: "accessories",
   },
   {
@@ -77,7 +79,7 @@ const myData = [
     keywords:
       "Waze Pack of 9 Decal Set, decals pack, packs of 9, Waze Packs, Waze Decals, waze, Waze",
     url: " https://loremflickr.com/320/240&quot",
-    category: "accessories",
+    category: "Laptop",
     subcategory: "accessories",
   },
   {
@@ -91,7 +93,7 @@ const myData = [
     keywords:
       "Google Twill Cap, Google Cap, Google Twill Caps, Google Twill, google cap, google caps, google twill, google twill black cap, google black caps, google caps, black caps, Google Caps",
     url: " https://loremflickr.com/320/240&quot",
-    category: "apparel",
+    category: "Mobile",
     subcategory: "apparel",
   },
   {
@@ -104,7 +106,7 @@ const myData = [
     keywords:
       "Google Fold-over Beanie Grey, gray beanie, grey beanie, Google Beanies, Fold over grey, Google Beanie Grey, Google headgear",
     url: " https://loremflickr.com/320/240&quot",
-    category: "apparel",
+    category: "Laptop",
     subcategory: "apparel",
   },
   {
@@ -118,7 +120,7 @@ const myData = [
     keywords:
       "Google Pom Beanie Charcoal, pom beanie, charcoal pom beanies, Google Beanies, Pom Beanies, charcoal Google pom, beanies, headgear",
     url: " https://loremflickr.com/320/240&quot",
-    category: "apparel",
+    category: "Pc",
     subcategory: "apparel",
   },
   {
@@ -132,7 +134,7 @@ const myData = [
     keywords:
       "Waze Women's Short Sleeve Tee, Waze Short Sleeve Tee, Waze Women's Tees, Waze Women's tee, waze ladies tees, waze ladies tee, waze short sleeve tees, waze short sleeve tee",
     url: " https://loremflickr.com/320/240&quot",
-    category: "apparel",
+    category: "Mobile",
     subcategory: "apparel",
   },
   {
@@ -146,7 +148,7 @@ const myData = [
     keywords:
       "Waze Men's Short Sleeve Tee, Waze Short Sleeve Tee, Waze Men's Tees, Waze Men's tee, waze mens tees, waze mens tee, waze short sleeve tees, waze short sleeve tee",
     url: " https://loremflickr.com/320/240&quot",
-    category: "apparel",
+    category: "Pc",
     subcategory: "apparel",
   },
   {
@@ -160,7 +162,7 @@ const myData = [
     keywords:
       "Mistral Rucksack, Mistral backpack, Mistral Backpack, backpack, bags, bag, Backpack, backpacks, packs, office gear, Bag, Bags, Google Backpack, google backpack, g, google",
     url: " https://loremflickr.com/320/240&quot",
-    category: "bags",
+    category: "Laptop",
     subcategory: "bags",
   },
   {
@@ -174,7 +176,7 @@ const myData = [
     keywords:
       "Google Rolltop Backpack Blue, google backpack, google blue backpack, blue rolltop, Google rolltop, Blue Backpack, backpack, rolltop",
     url: " https://loremflickr.com/320/240&quot",
-    category: "bags",
+    category: "Pc",
     subcategory: "bags",
   },
   {
@@ -188,7 +190,7 @@ const myData = [
     keywords:
       "Android Black Force 17 oz Bottle, android bottles, android black bottle, android 17 oz bottle, android black force bottle, android 17 oz Android Black Force Bottle, Android Trace Bottle Black",
     url: " https://loremflickr.com/320/240&quot",
-    category: "drinkware",
+    category: "Mobile",
     subcategory: "drinkware",
   },
   {
@@ -201,17 +203,84 @@ const myData = [
     keywords:
       "Android Black C-Handle Mug, android mugs, black android mug, c handle mug, android c handle,Android Trace Mug Black,",
     url: " https://loremflickr.com/320/240&quot",
-    category: "drinkware",
+    category: "Pc",
     subcategory: "drinkware",
   },
 ];
 class Products extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            myData
+        }
+    }
+
+
+    handleMobile = () => {
+        console.log("mobile");
+        // let mbtn = document.getElementsByClassName("mbtn").value
+        // console.log(mbtn);
+       
+        let mData = this.state.myData.filter((v , i) => v.category === 'Mobile'
+              
+        )
+
+        if(mData){
+            console.log(mData , "dfbh");
+            this.setState({
+                myData
+            })
+            
+        }
+        console.log(mData);
+
+    }
+    handlePc = () => {
+        console.log("pc");
+        let pData = this.state.myData.filter((v , i) => v.category === 'Pc'
+              
+        )
+
+        if(pData){
+            console.log(pData , "dfbh");
+            pData.map((v) => {
+
+                }) 
+          
+        }
+        console.log(pData);
+    }
+    handleLaptop = () => {
+        console.log("leptop");
+        let lData = this.state.myData.filter((v , i) => v.category === 'Laptop'
+              
+        )
+
+        if(lData){
+            console.log(lData , "dfbh");
+            lData.map((v) => {
+
+                }) 
+          
+        }
+        console.log(lData);
+    }
+    
+
   render() {
     return (
       <div>
+       
        <Container>
+       <Button  outline active  className="mbtn" onClick={this.handleMobile}>Mobile</Button> {' '}
+       <Button  onClick={this.handlePc}>Pc</Button>{' '}
+       <Button onClick={this.handleLaptop}>Laptop</Button>{' '}
        <Row>
-        {myData.map((v) => {
+       
+
+        { this.state.myData.map((v) => {
           return (
            
              
@@ -240,6 +309,7 @@ class Products extends Component {
                     />
                     <CardBody>
                       <CardText>Price : {v.price}</CardText>
+                      <CardText>Catagory : {v.category}</CardText>
                      <Button>Click</Button>
                     </CardBody>
                   </Card>
@@ -250,42 +320,19 @@ class Products extends Component {
         })}
         </Row>
         </Container>
-        {/* <Card
-                    style={{
-                        width: '18rem'
-                    }}
-                >
-                    <CardBody>
-                        <CardTitle tag="h5">
-                            <p> Name : {this.state.name} </p>
-                        </CardTitle>
-                        <CardSubtitle
-                            className="mb-2 text-muted"
-                            tag="h6"
-                        >
-                            <p> Description : {this.state.description} </p>
-                        </CardSubtitle>
-                    </CardBody>
-                    <img
-                        alt="Card cap"
-                        src="https://loremflickr.com/320/240"
-                        width="100%"
-                    />
-                    <CardBody>
-                        <CardText>
-                            Some quick example text to build on the card title and make up the bulk of the card‘s content.
-                        </CardText>
-                        <CardLink href="#">
-                            Card Link
-                        </CardLink>
-                        <CardLink href="#">
-                            Another Link
-                        </CardLink>
-                    </CardBody>
-                </Card> */}
+      
       </div>
     );
   }
 }
 
 export default Products;
+
+
+
+
+// let fData = getCinemaData.filter((v) =>
+// v.name.toLowerCase().includes(input.toLowerCase()) ||
+// v.location.toLowerCase().includes(input.toLowerCase()) ||
+// v.facility.toLowerCase().includes(input.toLowerCase())
+// )
