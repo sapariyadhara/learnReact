@@ -1,29 +1,40 @@
 import React from 'react';
+// import $ from 'jquery';
 
 
 
 function Boodoo(props) {
     return (
         <div>
-            <header>
-            <div class="container">
-            <div class="main-header">
-                <a href="#" class="logo">
-                <img src="./assets/images/logo.png"></img>
-                </a>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
+           <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="./assets/images/logo.png" alt=""></img></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                  </li>
+                  </ul>
+              </div>
             </div>
-        </div>
-            </header>
+          </nav>
+    </header>
 
             <main>
         <section id="hero">
@@ -594,6 +605,56 @@ function Boodoo(props) {
         </div>
 
     </footer>
+
+
+
+
+
+      <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    {/* <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> */}
+    {/* <script>
+        $(document).ready(function(){
+            $("body").scrollTop(function(){
+                $(".navbar>.container-fluid").css({
+                    "background-color":"black",
+                    "z-index":"9999",
+                    "position":"fixed",
+                    "top":"0",
+                    "left":"0",
+                });
+            })
+        });
+    </script> */}
+    {/* <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView = 1,
+            spaceBetween = 10,
+            pagination = {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation = {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints = {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: { 
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        </script> */}
         </div>
     );
 }
