@@ -1,4 +1,5 @@
 
+import Boodoo from './containers/Boodoo';
 import Clock from './containers/Clock';
 import ClockFun from './containers/ClockFun';
 import Counter from './containers/Counter';
@@ -12,6 +13,7 @@ import Products from './containers/Products';
 import Students from './containers/Students';
 import StudentsFun from './containers/StudentsFun';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import './containers/Boodoo.css'
 
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
      {/* <Country1 /> */}
      {/* <Clock /> */}
      {/* <ClockFun /> */}
-     <Products />
+     {/* <Products /> */}
+     <Boodoo />
+    
     </>
   );
 }
