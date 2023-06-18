@@ -9,26 +9,26 @@ function Boodoo(props) {
            <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"> <img src="./assets/images/logo.png" alt=""></img></a>
+              <a class="navbar-brand" href="/#"> <img src="./assets/images/logo.png" alt=""></img></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                    <a class="nav-link " aria-current="page" href="/#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">About</a>
+                    <a class="nav-link " aria-current="page" href="/#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Services</a>
+                    <a class="nav-link " aria-current="page" href="/#">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Page</a>
+                    <a class="nav-link " aria-current="page" href="/#">Page</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link " aria-current="page" href="/#">Contact Us</a>
                   </li>
                   </ul>
               </div>
@@ -46,7 +46,7 @@ function Boodoo(props) {
                     <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                         consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. odio ullamcorper non sed
                         dignissim eu.</p>
-                    <a href="#" class="btn-theme">Get Started</a>
+                    <a href="/#" class="btn-theme">Get Started</a>
                 </div>
             </div>
         </section>
@@ -93,7 +93,7 @@ function Boodoo(props) {
                             <div class="col-md-12">
                                 <h5>About</h5>
                                 <h2>Discover Everything Yourself WITH BOODOO</h2>
-                                <a href="#" class="btn-theme">Let’s get started</a>
+                                <a href="/#" class="btn-theme">Let’s get started</a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@ function Boodoo(props) {
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn-theme">See more</a>
+                <a href="/#" class="btn-theme">See more</a>
                 <div class="client row ">
                     <div class="col-md-auto">
                         <h5>Partner</h5>
@@ -328,7 +328,7 @@ function Boodoo(props) {
                                     aria-label="date"></input>
                             </div>
                             <div class="form-data col-md-6">
-                                <a href="#" class="btn-theme">BookNow</a>
+                                <a href="/#" class="btn-theme">BookNow</a>
                             </div>
                         </div>
                     </div>
@@ -344,7 +344,7 @@ function Boodoo(props) {
                 <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur
                     elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio ullamcorper non sed dignissim
                     eu.</p>
-                <a href="#" class="btn-theme">Get started</a>
+                <a href="/#" class="btn-theme">Get started</a>
             </div>
            </div>
         </section>
@@ -364,7 +364,7 @@ function Boodoo(props) {
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
-                        <a href="#" class="btn-theme">Choose Now</a>
+                        <a href="/#" class="btn-theme">Choose Now</a>
                     </div>
                     <div class="mp-data-box col-auto border">
                         <h3>BEST VALUE</h3>
@@ -373,7 +373,7 @@ function Boodoo(props) {
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
-                        <a href="#" class="btn-theme">Choose Now</a>
+                        <a href="/#" class="btn-theme">Choose Now</a>
                     </div>
                     <div class="mp-data-box col-auto border">
                         <h3>PREMIUM PRICE</h3>
@@ -382,7 +382,7 @@ function Boodoo(props) {
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
                         <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
-                        <a href="#" class="btn-theme">Choose Now</a>
+                        <a href="/#" class="btn-theme">Choose Now</a>
                     </div>
                 </div>
             </div>
@@ -544,25 +544,25 @@ function Boodoo(props) {
                         <img src="./assets/images/blog-1.jpg" alt=""></img>
                         <h3>The Art of Astrology Decoding the...</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
-                                href="#">see more</a></p>
+                                href="/#">see more</a></p>
                     </div>
                     <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/blog-2.jpg" alt=""></img>
                         <h3>The Art of Astrology Decoding the...</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
-                                href="#">see more</a></p>
+                                href="/#">see more</a></p>
                     </div>
                     <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/blog-3.jpg" alt=""></img>
                         <h3>The Art of Astrology Decoding the...</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
-                                href="#">see more</a></p>
+                                href="/#">see more</a></p>
                     </div>
                     <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/blog-4.jpg" alt=""></img>
                         <h3>The Art of Astrology Decoding the...</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
-                                href="#">see more</a></p>
+                                href="/#">see more</a></p>
                     </div>
                 </div>
             </div>
