@@ -28,8 +28,8 @@ function App() {
      {/* <Country1 /> */}
      {/* <Clock /> */}
      {/* <ClockFun /> */}
-     <Products />
-     {/* <Boodoo /> */}
+     {/* <Products /> */}
+     <Boodoo />
     
     </>
   );

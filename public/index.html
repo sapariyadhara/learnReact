@@ -4,17 +4,17 @@
    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styleanimated.css">
-    <script src="./assets/js/modernizr.js"></script>
+    <link rel="stylesheet" href="./%PUBLIC_URL%/assets/css/reset.css">
+    <link rel="stylesheet" href="./%PUBLIC_URL%/assets/css/styleanimated.css">
+    <script src="./%PUBLIC_URL%/assets/js/modernizr.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/font.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./%PUBLIC_URL%/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./%PUBLIC_URL%/assets/css/font.css">
+    <link rel="stylesheet" href="./%PUBLIC_URL%/assets/css/style.css">
     <title>Home</title>
   </head>
   <body>
@@ -30,5 +30,55 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+
+
+    <script src="./%PUBLIC_URL%/assets/js/bootstrap.bundle.js"></script>
+    <script src="./%PUBLIC_URL%/assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
+     <script>
+        $(document).ready(function(){
+            $("body").scrollTop(function(){
+                $(".navbar>.container-fluid").css({
+                    "background-color":"black",
+                    "z-index":"9999",
+                    "position":"fixed",
+                    "top":"0",
+                    "left":"0",
+                });
+            })
+        });
+    </script> 
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView : 1,
+            spaceBetween : 10,
+            pagination : {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation : {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints : {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: { 
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        </script> 
   </body>
 </html>
