@@ -9,11 +9,13 @@ import Country1 from './containers/Country1';
 import Coursee from './containers/Coursee';
 import Employee from './containers/Employee';
 import EmployeeFun from './containers/EmployeeFun';
+import FormikYupvalidation from './containers/FormikYupvalidation';
 import Products from './containers/Products';
 import Students from './containers/Students';
 import StudentsFun from './containers/StudentsFun';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './containers/Boodoo.css'
+
 
 
 function App() {
@@ -29,8 +31,8 @@ function App() {
      {/* <Clock /> */}
      {/* <ClockFun /> */}
      {/* <Products /> */}
-     <Boodoo />
-    
+     {/* <Boodoo /> */}
+    <FormikYupvalidation />
     </>
   );
 }
