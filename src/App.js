@@ -11,6 +11,7 @@ import Employee from './containers/Employee';
 import EmployeeFun from './containers/EmployeeFun';
 import FormikYupvalidation from './containers/FormikYupvalidation';
 import Products from './containers/Products';
+import PrototypeInheritance from './containers/PrototypeInheritance';
 import Students from './containers/Students';
 import StudentsFun from './containers/StudentsFun';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,7 +33,8 @@ function App() {
      {/* <ClockFun /> */}
      {/* <Products /> */}
      {/* <Boodoo /> */}
-    <FormikYupvalidation />
+    {/* <FormikYupvalidation /> */}
+    <PrototypeInheritance />
     </>
   );
 }
